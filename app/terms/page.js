@@ -1,36 +1,69 @@
-// app/terms.js
+// app/terms/page.js
 "use client";
-import { useRouter } from "next/navigation";
 
-export default function Terms() {
-  const router = useRouter();
-
-  const handleAccept = () => {
-    // تخزين موافقة المستخدم في localStorage
-    localStorage.setItem("acceptedTerms", "true");
-    router.push("/register");
-  };
-
+export default function TermsPage() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white px-4">
-      <h2 className="text-3xl font-bold mb-6">Terms of Use</h2>
-      <div className="bg-gray-800 p-6 rounded-lg max-w-2xl text-gray-300 mb-6 overflow-y-auto max-h-96">
-        <p>
-          Welcome to Algerian_Forums! By accessing this forum, you agree to follow all rules
-          and respect other members. Do not post illegal content or spam. 
-          The forum is intended for community discussion only. 
-        </p>
-        <p className="mt-4">
-          Your account requires two passwords for security. Keep them safe.
-          All content is moderated and inappropriate content may be removed.
-        </p>
+    <div className="max-w-3xl mx-auto p-6 text-gray-200">
+      <h1 className="text-4xl font-bold mb-6 text-center text-blue-400">
+        شروط الاستخدام
+      </h1>
+
+      <div className="space-y-6 leading-7 text-lg">
+        <section>
+          <h2 className="text-2xl font-semibold text-blue-300 mb-2">
+            1. قبول الشروط
+          </h2>
+          <p>
+            باستخدامك لموقع <span className="text-blue-400">Algerian Forums</span>، فإنك توافق على الالتزام بجميع الشروط والسياسات المذكورة في هذه الصفحة. إذا كنت لا توافق على أي جزء، فالرجاء التوقف عن استخدام المنصة.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold text-blue-300 mb-2">
+            2. حساب المستخدم
+          </h2>
+          <p>
+            عند إنشاء حساب، يجب عليك تقديم معلومات صحيحة ودقيقة. أنت مسؤول عن حماية كلمة مرورك وعن أي نشاط يحدث في حسابك.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold text-blue-300 mb-2">
+            3. المحتوى المنشور
+          </h2>
+          <p>
+            يتحمل المستخدم المسؤولية الكاملة عن أي منشور أو تعليق يقوم به. يمنع نشر المحتوى المخالف للقوانين أو المسيء أو الذي ينتهك حقوق الآخرين.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold text-blue-300 mb-2">
+            4. حقوق الملكية
+          </h2>
+          <p>
+            جميع الحقوق محفوظة لـ <span className="text-blue-400">Algerian Forums</span>. يمنع نسخ أو إعادة نشر أي جزء من المنصة بدون إذن.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold text-blue-300 mb-2">
+            5. التعديلات على الشروط
+          </h2>
+          <p>
+            يحق للمنصة تعديل شروط الاستخدام في أي وقت. استمرارك في تصفح الموقع بعد التعديل يعني موافقتك على الشروط الجديدة.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold text-blue-300 mb-2">
+            6. إخلاء المسؤولية
+          </h2>
+          <p>
+            المنصة غير مسؤولة عن أي أضرار مباشرة أو غير مباشرة ناتجة عن استخدام الموقع أو أي محتوى منشور من قبل المستخدمين.
+          </p>
+        </section>
       </div>
-      <button
-        onClick={handleAccept}
-        className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg"
-      >
-        I Accept
-      </button>
     </div>
   );
 }
+
