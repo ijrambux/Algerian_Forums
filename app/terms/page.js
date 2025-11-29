@@ -1,69 +1,37 @@
-// app/terms/page.js
-"use client";
-
 export default function TermsPage() {
   return (
-    <div className="max-w-3xl mx-auto p-6 text-gray-200">
-      <h1 className="text-4xl font-bold mb-6 text-center text-blue-400">
-        شروط الاستخدام
-      </h1>
+    <div style={{ padding: "40px", maxWidth: "800px", margin: "0 auto" }}>
+      <h1>Terms & Conditions</h1>
+      <p>
+        Welcome to Algerian Forums. By using this website, you agree to the
+        following terms and conditions.
+      </p>
 
-      <div className="space-y-6 leading-7 text-lg">
-        <section>
-          <h2 className="text-2xl font-semibold text-blue-300 mb-2">
-            1. قبول الشروط
-          </h2>
-          <p>
-            باستخدامك لموقع <span className="text-blue-400">Algerian Forums</span>، فإنك توافق على الالتزام بجميع الشروط والسياسات المذكورة في هذه الصفحة. إذا كنت لا توافق على أي جزء، فالرجاء التوقف عن استخدام المنصة.
-          </p>
-        </section>
+      <h2>1. Usage</h2>
+      <p>
+        You agree not to misuse the platform or attempt to disrupt the services.
+      </p>
 
-        <section>
-          <h2 className="text-2xl font-semibold text-blue-300 mb-2">
-            2. حساب المستخدم
-          </h2>
-          <p>
-            عند إنشاء حساب، يجب عليك تقديم معلومات صحيحة ودقيقة. أنت مسؤول عن حماية كلمة مرورك وعن أي نشاط يحدث في حسابك.
-          </p>
-        </section>
+      <h2>2. Privacy</h2>
+      <p>
+        We respect your privacy. Information collected is used in accordance
+        with our privacy policy.
+      </p>
 
-        <section>
-          <h2 className="text-2xl font-semibold text-blue-300 mb-2">
-            3. المحتوى المنشور
-          </h2>
-          <p>
-            يتحمل المستخدم المسؤولية الكاملة عن أي منشور أو تعليق يقوم به. يمنع نشر المحتوى المخالف للقوانين أو المسيء أو الذي ينتهك حقوق الآخرين.
-          </p>
-        </section>
+      <h2>3. Content</h2>
+      <p>
+        Users are responsible for the content they publish on the forums.
+      </p>
 
-        <section>
-          <h2 className="text-2xl font-semibold text-blue-300 mb-2">
-            4. حقوق الملكية
-          </h2>
-          <p>
-            جميع الحقوق محفوظة لـ <span className="text-blue-400">Algerian Forums</span>. يمنع نسخ أو إعادة نشر أي جزء من المنصة بدون إذن.
-          </p>
-        </section>
+      <h2>4. Changes</h2>
+      <p>
+        These terms may be updated at any time without prior notice.
+      </p>
 
-        <section>
-          <h2 className="text-2xl font-semibold text-blue-300 mb-2">
-            5. التعديلات على الشروط
-          </h2>
-          <p>
-            يحق للمنصة تعديل شروط الاستخدام في أي وقت. استمرارك في تصفح الموقع بعد التعديل يعني موافقتك على الشروط الجديدة.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-semibold text-blue-300 mb-2">
-            6. إخلاء المسؤولية
-          </h2>
-          <p>
-            المنصة غير مسؤولة عن أي أضرار مباشرة أو غير مباشرة ناتجة عن استخدام الموقع أو أي محتوى منشور من قبل المستخدمين.
-          </p>
-        </section>
-      </div>
+      <h2>Contact</h2>
+      <p>
+        If you have any questions, feel free to contact us.
+      </p>
     </div>
   );
 }
-
